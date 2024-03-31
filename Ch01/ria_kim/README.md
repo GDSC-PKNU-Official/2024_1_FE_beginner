@@ -1,10 +1,12 @@
-<strong>a</strong> : 글자 강조
-<u>a</u> : 글자 밑줄
-<h1>a</h1> : heading(h1~h6) 
-<br> : 줄바꿈 태그 (닫는 태그 없음)
-<p>a</p> : 단락 태그
+#HTML강의요약
 
--> <br> vs <p></p>
+>   <strong>a</strong> : 글자 강조
+    <u>a</u> : 글자 밑줄
+    <h1>a</h1> : heading(h1~h6) 
+    <br> : 줄바꿈 태그 (닫는 태그 없음)
+    <p>a</p> : 단락 태그
+
+>>        -> <br> vs <p></p>
 <p>태그를 사용하는게 단락을 더 확실히 나눌 수 있다
 
 <img src="이미지주소(url)">
