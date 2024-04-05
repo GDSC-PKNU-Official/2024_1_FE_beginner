@@ -3,21 +3,97 @@
     <head>
         <meta charset="'utf-8">
         <title>이하린을 소개하는 웹 페이지</title>
+        <style>
+            #list{
+                color:green;
+            }
+            #pic{
+                position: relative;
+                left: 570px;
+                bottom:200px;
+                border-left:1px solid black;
+                padding-left:10px;
+            }
+            #hobby{
+                position: absolute;
+                top: 300px;
+            }
+            h3{
+                font-size:40px;
+                width:500px;
+                margin:5px;
+                color: salmon;
+                border-bottom:1px solid black;
+                border-top: 2px dotted grey;
+            }
+            table{
+                margin-left:5px;
+            }
+            a{
+                text-decoration:none;
+                color:peru;
+            }
+            @media(max-width:800px){
+                img {
+                    display:none;
+                }
+                h3{
+                font-size:40px;
+                margin:5px;
+                color: salmon;
+                text-align:center;
+            }
+            a{
+                text-decoration:none;
+                color:peru;
+            }
+            #list{
+                color:green;
+                text-align:center;
+            }
+            #pic{
+                position:static;
+            }
+            p{
+                text-align:center;
+            }
+            }
+        </style>
     </head>
     <body>
-        <h3>인사</h3>
-        <p>안녕하세요.<br>저는 <u>부경대학교 컴퓨터인공지능공학부</u> 2학년 <strong>이하린입니다.</strong><br>
-        개발은 처음이지만 노력해서 실력을 쌓아가고 싶어요.<br>앞으로 잘 부탁드립니다.</p>
-        <h3>취미</h3>
-        <p>저는 쉴 때 음악을 듣는 것을 좋아해요.<br>제가 좋아하는 음악 목록은 다음과 같습니다:</p>
-        <ol>
-            <li>(여자)아이들-나는 아픈 건 딱 질색이니까</li>
-            <li>Lauv-Steal The Show</li>
-            <li>요네즈 켄시-Lemon</li>
-        </ol>
+    <div id="grid">
+            <h3 style="height:60px">인사</h3>
+            <p>안녕하세요.<br>저는 <u>부경대학교 컴퓨터인공지능공학부</u> 2학년 <strong>이하린입니다.</strong><br>
+            개발은 처음이지만 노력해서 실력을 쌓아가고 싶어요.<br>앞으로 잘 부탁드립니다.</p>
+        <div id="hobby">
+            <h3>취미</h3>
+            <p>저는 쉴 때 음악을 듣는 것을 좋아해요.<br>제가 좋아하는 음악 목록은 다음과 같습니다:</p>
+            <div id="list">
+            <table border="2px solid grey">
+                <tr>
+                    <th>가수</th>
+                    <th>제목</th>
+                </tr>
+                <tr>
+                    <td>(여자)아이들</td>
+                    <td>나는 아픈 건 딱 질색이니까</td>
+                </tr>
+                <tr>
+                    <td>Lauv</td>
+                    <td>Steal The Show</td>
+                </tr>
+                <tr>
+                    <td>요네즈 켄시</td>
+                    <td>Lemon</td>
+            </table>
+            </div>
         <p><a href="https://www.youtube.com/">유튜브에 가면 이 노래들을 들을 수 있어요.</a></p>
         <p>최근 새로운 취미로 수영을 시작했어요.<br>저번 달부터 배우고 있는데, 나날이 발전하는 것이 느껴져 무척 재미있습니다.</p>
-        <h3><a href="C:\Users\chika\Downloads\이하린_Week1_2.html">최근의 고민</a></h3>
-        <img src="https://images.unsplash.com/photo-1511871893393-82e9c16b81e3?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        </div>
+        <div id="pic">
+            <h3><a href="C:\Users\chika\OneDrive\문서\PKNU\GDSC_FRONTEND\harin_Week1_2.html">최근의 고민</a></h3>
+            <img src="https://images.unsplash.com/photo-1511871893393-82e9c16b81e3?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        </div>
+    </div>    
     </body>
 </html>
