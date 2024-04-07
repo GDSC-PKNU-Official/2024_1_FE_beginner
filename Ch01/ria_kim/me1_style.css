@@ -1,0 +1,41 @@
+body {
+    background-color: #FDFF85;
+    background-image: url('/imges/browser.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;  
+    
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+}
+
+ul{
+    display: flex;
+    flex-wrap: nowrap;
+    left:23%;
+    justify-content: center;
+    position: absolute;
+    top: 28%;
+    font-family : 'NanumSquare', sans-serif;
+}
+.ul1{
+    margin: 0 20px;
+    
+    
+}
+
+.ul2{
+
+    margin: 0 20px;
+    
+}
+
+h1{
+    position: absolute;
+    color: #6E6E6E;
+    top: 132px;
+    left: 37%;
+    font-size: 20px;
+    font-family : 'NanumSquare', sans-serif;
+}
