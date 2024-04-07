@@ -22,7 +22,8 @@ CSS가 효과적인 이유
 <h3>CSS의 기본문법</h3>
 
 - `style="color:red"`: 속성 property. <br>
-ex. `<li><a href="2.html" style="color:red">CSS</a></li>`<br>
+    > ex. `<li><a href="2.html" style="color:red">CSS</a></li>`<br>
+    
 -> style이라는 속성을 쓰면, style 속성이 위치하고 있는 태그에게 CSS 문법이 적용.
 
 - `a{}`: 선택자 selector  
