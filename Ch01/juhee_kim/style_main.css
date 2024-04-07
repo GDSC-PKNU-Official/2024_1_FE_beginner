@@ -30,20 +30,28 @@ a:hover{
     color: rgb(101, 101, 101);
 }
 
-.contents{
+#contents{
     display: flex;
+    position: static;
     align-items: center;
-    margin-left: 700px;
-    margin-top: 50px;
+    margin-left: 35%;
+    margin-top: 8%;
+}
+#contents img{
+    height: 300px;
 }
 
-.contents p{
+#contents p{
     margin-right: 300px;
     font-size: 30px;
 }
 
 .SNS{
-    padding-top: 280px;
+    position: fixed;
+    top:50%;
+    right: 40%;
+
+    padding-top: 20%;
     text-align: center;
     font-size: 23px;
 }
@@ -52,8 +60,15 @@ a:hover{
     height: 21px;
 }
 
-@media(min-width:800px){
-    .contents img{
-        height: 20px;
+@media(max-width:1000px){
+    #contents img{
+        height: 100px;
+        width: auto;
+    }
+    #contents p{
+        margin-right: 20px;
+    }
+    .SNS{
+        padding-top: 300px;
     }
 }
