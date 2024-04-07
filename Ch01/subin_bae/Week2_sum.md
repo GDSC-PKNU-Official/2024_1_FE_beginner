@@ -50,7 +50,7 @@ ex. `<li><a href="2.html" style="color:red">CSS</a></li>`<br>
     - class의 속성값은 여러개의 값이 들어올 수 있음. 띄어쓰기로 구분.<br>
 
 - `id`: class 선택자보다 우선순위가 높음. id값은 한 번만 사용할 수 있음. 중복불가.<br> 
-    > ex. `id="active"`<br>
+    > ex. id="active"<br>
 
     - `#id값`: 선택자가 됨. <br><br>
  
