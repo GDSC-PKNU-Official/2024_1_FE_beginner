@@ -1,23 +1,35 @@
 <!doctype html>
 <html>
-    <head>
-        <title>My Page</title>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <div align="center">
-            <h1><a href='myPage.html'>🏡 Joooii 🏡</a></h1>
-
-            <a href="introduction.html">🍼Click Me🍼</a><br>
-            <a href="like.html">👻Like👻</a><br>
-
-            <h2>제가 좋아하는 것은</h2>
-            
-            <p>
-                음식: 돈까스<br>
-                취미: 넷플릭스📽️<br>
-                <img src="images/돈까스.png" width="300px">
-            </p>
+<head>
+    <title>My Page</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style_like.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_logo">
+            <h1><a href='myPage.html'>Joooii</a></h1>
         </div>
-    </body>
+
+        <div class="navbar_menu">
+            <li><a href="myPage.html">Home</a></li>
+            <li><a href="introduction.html">Introduct</a></li>
+            <li><a href="like.html">Interest</a></li>
+        </div>
+    </nav>
+    
+    <div id="interest">
+        <h2>제가 좋아하는 것은</h2>
+            
+        <p class="food">음식: 돈까스</p>
+        <p class="inter">취미: 넷플릭스</p>
+        <p class="bucket">버킷리스트: 혼자 해외여행</p>
+        <p class="travel">가고싶은 나라</p>
+        
+        <div class="travel1">
+        <img src="images/호주.jpeg"><p>호주</p></div>
+        <div class="travel2">
+        <img src="images/싱가폴.jpeg"><p>싱가폴</p></div>
+    </div>
+</body>
 </html>

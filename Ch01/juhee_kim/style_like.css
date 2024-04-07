@@ -1,0 +1,54 @@
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+}
+
+body{
+    margin:0;
+    background-color: rgb(238, 232, 212);
+}
+
+.navbar_menu{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding-left: 0;;
+}
+
+.navbar_menu li{
+    padding: 8px 30px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: rgb(101, 101, 101);
+}
+
+#interest{
+    text-align: center;
+}
+
+img{
+    width: 400px; 
+    height: 300px;
+}
+
+.travel1, .travel2{
+    float: left;
+    margin-top: 20px;
+}
+
+.travel1{
+    margin-left: 400px;
+}
+
+.travel2{
+    margin-left: 100px;
+}
