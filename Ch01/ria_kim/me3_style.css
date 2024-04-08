@@ -1,0 +1,53 @@
+body {
+    background-color: #FDFF85;
+    
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+}
+
+.duck{
+    position: relative;
+    width: 500px;
+    top: 40%;
+    left: 5%;
+}
+
+
+.bubble{
+    position:absolute;
+    left: 45%;
+    bottom: 20%;
+    z-index: 1;
+
+}
+
+.thinking{
+    position: absolute;
+    z-index: 2;
+    left: 52%;
+    bottom: 50%;
+    font-family : 'NanumSquare', sans-serif;
+}
+
+p{
+    position: relative;
+    top: 40px;
+    font-size: 25px;
+    width: 470px;
+    font-weight: 500;
+}
+
+h2{
+    font-weight: 900;
+    font-size: 35px;
+}
+
+@media (max-width:1000px){
+    .bubble{
+        display: none;
+    }
+    .thinking{
+        display: none;
+    }
+}
