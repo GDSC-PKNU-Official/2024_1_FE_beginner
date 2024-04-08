@@ -3,31 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <title>Hwang Yoojin</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 style="margin: 20px;">
-        <a href="home.html" title="[Home] Hwang Yoojin">황유진</a>
-    </h1>
-    <ol>
-        나이: 21<br>
-        생일: FEB 17<br>
-        mbti: INFP<br>
-    </ol>
-    <img src="ggongzi.png" width="7%">
-    <p style="margin-left: 30px;">
-        안녕하세요 저는 <strong>황유진</strong>입니다.<br>
-        저는 부경대학교에서 컴퓨터공학과 3학년에 재학 중입니다.<br><br>
+    <!---->
+    <header>
+      <h1><a href="home.html" title="[Home] Hwang Yoojin" style="text-decoration:none;">황유진</a></h1>
+    </header>
+  <!-- when width is longer than 670px -->
+    <div id="grid1">
+        <aside>
+            <a href="sns.html" title="SNS_HwangYoojin">Yoojin's SNS</a><br>
+            <a href="contact.html" title="Contact_HwangYoojn">Yoojin's Contact</a>
+        </aside>
+        <main>
+            <img src="ggongzi.png" width="100px" style="margin:30px;">
+            <p style="margin-left: 30px;">
+                안녕하세요 저는 <strong>황유진</strong>입니다.<br>
+                저는 부경대학교에서 컴퓨터공학과 3학년에 재학 중입니다.<br>
+            </p>       
+          <table class="table1" border="1">
+            <tr>
+              <td>나이</td>
+              <td>21</td>
+            </tr>
+            <tr>
+              <td>생일</td>
+              <td>FEB 17</td>
+            </tr>
+            <tr>
+              <td>mbti</td>
+              <td>INFP</td>
+             </tr>
+          </table>
+            <!--Button tag-->
+            <button class="button1">Button</button>
+            <h2 style="margin-left:30px;">
+                [ Hwang Yoojin의 SNS 링크.. ]    
+            </h2>
     
-        SNS 구경하기 -> <a href="sns.html" title="SNS_HwangYoojin">Yoojin's SNS</a><br>
-        연락처       -> <a href="contact.html" title="Contact_HwangYoojn">Yoojin's Contact</a><br>
-    </p>
-    
-    <h2 style="margin-left:30px;">
-        [ Hwang Yoojin의 SNS 링크~~ ]    
-    </h2>
-    <p><p style="margin-left:40px;">
-        -><a href="https://blog.naver.com/dddpdpdppddd" target="_blank" title="Yoojin's Blog">Naver Blog</a><br>
-        -><a href="https://www.instagram.com/hwngyoojin/" target="_blank" title="Yoojin's Blog">Instagram</a>
-    </p>
+            <p id="link" style="margin-left:40px;">
+                -><a href="https://blog.naver.com/dddpdpdppddd" target="_blank" title="Yoojin's Blog">Naver Blog</a><br>
+                -><a href="https://www.instagram.com/hwngyoojin/" target="_blank" title="Yoojin's Blog">Instagram</a>
+            </p>
+        </main>
+    </div>
+    <!-- when width is shorter than 670px -->
+    <div id="grid2">
+        <div class="banner">
+          <div class="item1"><a href="sns.html" title="SNS_HwangYoojin">Yoojin's SNS</a></div>
+          <div class="item2"><a href="contact.html" title="Contact_HwangYoojn">Yoojin's Contact</a></div>
+        </div>
+        
+        <img src="ggongzi.png" width="100px" style="margin:30px;">
+        <p style="margin-left:30px;">
+            안녕하세요 저는 <strong>황유진</strong>입니다.<br>
+            저는 부경대학교에서 컴퓨터공학과 3학년에 재학 중입니다.<br><br>
+        </p>
+        <table class="table1" border="1">
+            <tr>
+              <td>나이</td>
+              <td>21</td>
+            </tr>
+            <tr>
+              <td>생일</td>
+              <td>FEB 17</td>
+            </tr>
+            <tr>
+              <td>mbti</td>
+              <td>INFP</td>
+             </tr>
+        </table>
+        <!--Button tag-->
+        <button class="button1">Button</button>
+        <h2 style="margin-left:30px;">
+            [ Hwang Yoojin의 SNS 링크.. ]    
+        </h2>
+
+        <p id="link" style="margin-left:40px;">
+            -><a href="https://blog.naver.com/dddpdpdppddd" target="_blank" title="Yoojin's Blog">Naver Blog</a><br>
+            -><a href="https://www.instagram.com/hwngyoojin/" target="_blank" title="Yoojin's Blog">Instagram</a>
+        </p>
+    </div>
 </body>
 </html>

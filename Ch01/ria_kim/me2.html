@@ -4,33 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>내가 좋아하는 것</title>
+    <link rel="stylesheet" href="me2_style.css">
+    <link rel="stylesheet" href="https://webfontworld.github.io/NanumSquare/NanumSquare.css">
 </head>
 <body>
     <h1>제가 좋아하는 것들을 소개하겠습니다!</h1>
 
     <h3>
     <ol>
-        <li>음식</li>
-        <ul>
-            <li>떡볶이</li> 
-            <img src="/food1.jpg">
-            <li>연어초밥</li>
-            <img src="/food2.jpg">
-            <li>냉모밀</li>
-            <img src="/food3.jpg">
-            <li>카페라떼</li>
-            <img src="/food4.jpg">
-        </ul>
+        <li id="first" >음식</li><br><br>
+
+        <div>
+            <table class="foods">
+                <tr>
+                
+                    <td>
+                        <div id="food">
+                            떡볶이<br>
+                            <img src="/imges/food1.jpg">
+                        </div>
+                    </td>
+                    
+                    <td>
+                        <div id="food">
+                            연어초밥<br>
+                            <img src="/imges/food2.jpg">
+                        </div>
+                    </td>
+                    
+                    <td>
+                        <div id="food">
+                            냉모밀<br>
+                            <img src="/imges/food3.jpg">
+                        </div>
+                    </td>
+                    
+                    <td>
+                        <div id="food">
+                            카페라떼<br>
+                            <img src="/imges/food4.jpg">
+                        </div>
+                    </td>
+                </tr>
+                
+            </table>
+        </div>
         <br>
 
         
-        <li>좋아하는 색깔</li>
-        <ul>
-            <li style="color: green;">초록색</li>
-            <img src="/color1.png" width="200">
-            <li style="color: rgb(117, 142, 192);">하늘색</li>
-            <img src="/color2.png" width="200" >
-        </ul>
+        <li id="first">좋아하는 색깔</li><br><br>
+        <div>
+            <ul class="colors">
+                <div id="color">
+                    <li style="color: green;">초록색</li>
+                    <img src="/imges/color1.png" width="200">
+                </div>
+                <div id="color">
+                    <li style="color: rgb(117, 142, 192);">하늘색</li>
+                    <img src="/imges/color2.png" width="200" >
+                </div>
+                
+            </ul>
+        </div>
     </ol>
     </h3>
 </body>
