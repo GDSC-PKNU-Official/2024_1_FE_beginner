@@ -55,7 +55,11 @@ ol{
 
 #food{
     font-weight: 700;
-    margin:20px ;
+    margin:20px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
 }
 
 .colors{
@@ -71,3 +75,18 @@ ol{
     margin:20px;
 }
 
+
+
+@media screen and (max-width: 600px) {
+    h1,ol {
+        left: 0; 
+    }
+
+    .foods,.colors {
+        justify-content: flex-start; 
+    }
+
+    #food,#color {
+        align-items: flex-start;
+    }
+}
