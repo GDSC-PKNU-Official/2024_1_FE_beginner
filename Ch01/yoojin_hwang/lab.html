@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hwang Yoojin</title>
+    <link rel="stylesheet" href="css/lab.css">
+</head>
+<body>
+<!--header--------------------------------------------------------------------------------------->
+  <header>
+    <a class="PageName" href="index.html" title="[Home] Hwang Yoojin">Yoojin.H</a>
+    <!-- header color button (ON/OFF) -->
+    <button onclick="ON()" class="ON_button">ON</button>
+    <button onclick="OFF()"class="OFF_button">OFF</button>
+  </header>
+<!-- grid1 : when width is longer than 1200px --------------------------------------------------->
+  <div id="grid1">
+    <!-- side-bar -->
+    <aside class="menu">
+      <br>
+      <a    href="index.html"   title="Home">Home</a><br><br>
+      <b><a href="lab.html" title="LAB" style="
+        color:rgb(18, 209, 91); 
+        background-color: rgb(200, 255, 0);
+        border:2px solid rgb(255, 0, 221);
+        margin:2px 0;">
+        LAB</a></b><br><br>
+      <a href="contactme.html"  title="ContactMe">Contact Me</a><br><br>
+      <a href="tmi.html"        title="TMI">TMI</a>
+    </aside>
+    <!-- main -->
+    <main>
+      <br><br>
+      <b class="intro">Yoojin's Lab</b>
+      <ul>
+        <!-- 현재 날짜, 시간 -->
+        <li><p id="today"></p></li>
+        <li>
+          <!-- 바다토끼 open~! -->
+          <button onclick="showDetail()" id="open" class="sea_rabbit">
+              바다토끼를 아시나요?</button>
+          <div id="desc" class="detail">
+            <br><img src="img/sea_rabbit.jpeg">
+            <p>
+              바다 토끼라 불리는 이 아이의 이름은 <b>Jorunna parva</b>입니다.<br>
+              우리나라 이름은 갯민숭달팽이고요,,<br>
+              아주 깜찍해 보이지만 독성이 있기 때문에 만지면 아프대요.<br>
+              복실복실해 보여서 만져보고싶지만..<br> 
+              저건 털이 아니랍니다<br>
+              그리고 저기 달린 귀같은 건 감각기관입니다. <br>
+              사람으로 치면 콧구멍 정도.... <br>
+              촉각과 후각을 느낄 수 있는 마법의 콧구멍...<br>
+              엉덩이에 달린 꼬리..? 같은 부분은 아가미랍니다.<br>
+            </p>
+            <!-- 바다토끼 close.. -->
+            <button onclick="hideDetail()" id="close" class="sea_rabbit">close</button>
+          </div>
+        </li> 
+      </ul>
+    </main>
+  </div>
+<!-- grid2 : when width is shorter than 1200px ------------------------------------------------->
+  <div id="grid2">
+    <!-- banner -->
+    <div class="banner">
+      <div class="item1"><a href="index.html"   title="Home">Home</a></div>
+      <div class="item2"><a href="lab.html" title="LAB" style="
+        color:rgb(18, 209, 91);"><b>LAB</b></a></div>
+      <div class="item3"><a href="contactme.html" title="ContactMe">Contact Me</a></div>
+      <div class="item4"><a href="tmi.html"       title="TMI">TMI</a></div>
+    </div>
+    <!-- main -->
+    <main>
+      <br><br>
+      <b class="intro">Yoojin's Lab</b>
+      <ul>
+        <li>실험 중...</li>
+        <li>중간 공부 중...</li>
+      </ul>
+      <img src="img/christmas.JPG" style="width:600px;">
+    </main>
+  </div>
+<!-- script ------------------------------------------------------------------------------------>
+  <script src="js/lab.js"></script>
+</body>
+</html>
