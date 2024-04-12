@@ -8,9 +8,9 @@
 ## 2. event
 
 - 웹 브라우저에서 자바스크립트에 의해 사건 진행
-- onclick : <input type=”button“ value=” “ onclick=”alert(’ ‘)”>
+- onclick : <input type="button" value=" " onclick="alert(' ')">
 버튼을 클릭하면 alert의 메세지 출력
-- onchange : <input type=”text” onchange=”alert(’ ‘)”>
+- onchange : <input type="text" onchange="alert(' ')">
 텍스트의 내용이 바뀌면 alert의 메세지 출력
 
 ## 3. console
@@ -35,6 +35,6 @@
 
 - onclick과 같은 요소에 JS 문법 넣기
 - 야간모드(e.g.)
-:<input type=”button” value=”night” onclick=”
-    document.querySelector(’body’).style.backgroundColor=”black”;
-    document.querySelector(’body’).style.color=”white”;”>
+:<input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor="black";
+    document.querySelector('body').style.color='white';">
