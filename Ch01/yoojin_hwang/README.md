@@ -1,5 +1,11 @@
-<h2> 👀 어바웃 유진</h2><br>
+<h2> 👀 Yooijn's Github</h2><br>
 
+<p>I'm currently studyting HTML, CSS and JS.<br>
+➡️ <a href="https://hnyoojin.github.io/GDSC_FE_Beginner/"><b>Yoojin's web</b></a><br><br>
+</p>
 
-<h3>🌱HTML을 이용해 자기소개 웹 사이트 만들기</h3>
-<img src="ggongzi.png" width="8%">
+<h3>🌱Skills</h3>
+<ul>
+  <li>Programming Language - C, HTML, CSS, Python, JS, C++</li>
+  <li>Language - Korean, English, Italian</li>
+</ul><p><br></p>
