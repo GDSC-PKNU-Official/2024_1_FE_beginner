@@ -12,6 +12,11 @@
 
         
             <h1>   😊안녕하세요😊 <br> 저는 김리아입니다 </h1>
+
+            <form class="username">
+                당신의 이름이 궁금해요! :  <input class="inputname" id="username" type='text'/><br>
+                <input type='submit' value='제출' id="submit" class="inputname">
+            </form>
             
 
 
@@ -24,6 +29,14 @@
             </ol>
         </div>
     </div>
+
+    <script>
+        document.getElementById("submit").addEventListener("click", function() {
+            var usernameInput = document.getElementById("username"); 
+            var name = usernameInput.value;
+            alert(name+'님 안녕하세요!!');
+        });
+    </script>
 
 </body>
 </html>
