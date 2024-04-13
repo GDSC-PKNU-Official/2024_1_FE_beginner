@@ -1,0 +1,41 @@
+body{
+    background-color: #FAF8EC;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 450px;
+    border-top: 1px solid #4A4A4A;
+    border-bottom: 1px solid #4A4A4A;
+}
+
+.profile {
+    display: flex;
+    text-align: center;
+    width: 450px;
+    height: 120px;
+    position:sticky;
+
+    border-bottom: 1px solid #A6A6A6;
+}
+
+.profile img {
+    width: 100px;
+    margin-left: 20px;
+}
+
+.profile h3 {
+    color: black;
+    font-size: 30px;
+    padding-left: 40px;
+}
+
+table {
+    margin-top: 20px;
+    width: 70%;
+    font-weight: 300;
+}

@@ -3,19 +3,67 @@
     <head>
         <meta charset="UTF-8">
         <title>Introduce</title>
+        <style>
+            h3 {
+                border-radius: 20px 20px 0px 0px;
+                background-color: linen;
+                border: 1px solid gray;
+                margin: 0;
+                padding: 20px;
+                font-size: 1.5em;
+                text-align: center;
+                color: blueviolet; 
+            }
+            p {
+                text-align: left;
+                font-size: 15px;
+            }
+            #grid {
+                border: 1px solid gray;
+                border-radius: 0px 0px 20px 20px;
+                background-color: linen;
+                display: grid;
+                grid-template-columns: 350px 1fr;
+            }
+            #grid #article {
+                padding-left: 30px;
+            }
+            img {
+                padding: 10px;
+                border-right: 1px solid gray;
+            }
+            @media(max-width:973px) {
+                #grid {
+                    display: block;
+                    padding-bottom: 20px;
+                    font-size: 13px;
+                }
+                img {
+                    border-right: none;
+                }
+                h3 {
+                    border-bottom: none;
+                }
+                p {
+                    font-size: 13px;
+                }
+            }
+        </style>
     </head>
     <body>
         <strong><h3>"김상은"을 소개합니다.</h3></strong>
-        <hr>
+        <div id="grid">
         <img src="media/sangeun.png" width=350 height=400
             alt="sangeun">
-        <p>
+            <div id="article">
+            <p>
             안녕하세요! 저는 부경대학교 컴퓨터인공지능공학부 2학년 김상은입니다.<br>
             나이는 01년생으로 24살이고, 항상 모두에게 좋은 사람이기 위해 노력하는 사람입니다.<br>
 
             SNS : <a href="https://www.instagram.com/s_eun1118/" target="_blank">Instagram</a>
-        </p>
-        저에 대해서 더 궁금하다면 ? <a href="seun2.html" target="_blank">Click!</a> 
-        
+            </p>
+            저에 대해서 더 궁금하다면 ? <a href="seun2.html" target="_self">Click!</a> 
+            </div>
+        </div>
     </body>
 </html>
