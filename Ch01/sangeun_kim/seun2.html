@@ -26,6 +26,15 @@
         </style>
     </head>
     <body>
+        <script>
+            function fncSoundPlay(fileName) {
+	        var audio = new Audio("/sound/"+fileName);
+	        audio.load();
+	        audio.volume = 1;
+	        audio.play();
+            audio.autoplay = true;
+            }
+        </script>
         <strong><h3>더 많은 나의 정보</h3></strong>
         <table>
             <thead>
@@ -66,5 +75,14 @@
         </ul>
         <a href="https://kseuniu.tistory.com" target="_blank">덕질하며 찍었던 사진들</a>
         </div>
+        <button id="play-button" style="position: relative;top:10px;">음악 재생</button>
+        <script>
+            const audio = new Audio('audio.mp3');
+            const playButton = document.getElementById('play-button');
+
+            playButton.addEventListener('click', function() {
+                audio.play();
+            })
+        </script>
     </body>
 </html>
