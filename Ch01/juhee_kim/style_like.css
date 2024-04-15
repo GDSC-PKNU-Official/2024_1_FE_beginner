@@ -52,6 +52,40 @@ img{
     margin-left: 100px;
 }
 
+#footer{
+    position: fixed;
+    height: 70px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.SNS{
+    display: inline-block;
+    float: left;
+    margin-left:20px;
+    margin-top: 5px;
+}
+
+.SNS img{
+    height: 40px;
+    width: 40px;
+    padding-right: 10px;
+}
+
+.mode{
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.mode input{
+    height: 35px;
+    padding-left: 5px;
+}
+
 @media(max-width:800px){
     .travel1 img{
         height: 100px;
