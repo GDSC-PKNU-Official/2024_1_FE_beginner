@@ -3,40 +3,41 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>나의 정보 !</title>
+    <title>goeun's page</title>
     <link rel="stylesheet" href="style2.css">
   </head>
   <body>
-    <strong><h1>나의 정보</h1></strong>
+    <strong><h1>나의 정보 (버튼 클릭 !)</h1></strong>
+    <br>
     <table>
       <tr>
-        <td>이름</td>
-        <td>강고은</td>
+        <td><button id="button1" onmouseover="buttonChangeColor('#f8cfe7', this)" onmouseout="buttonChangeColor('#9aabb7', this)" onclick="showContent('name')">이름</button></td>
+        <td><div id="content1" style="display: none;">강고은</div></td>
       </tr>
       <tr>
-        <td>나이</td>
-        <td>22살</td>
+        <td><button id="button2" onmouseover="buttonChangeColor('#f8cfe7', this)" onmouseout="buttonChangeColor('#9aabb7', this)" onclick="showContent('age')">나이</button></td>
+        <td><div id="content2" style="display: none;">22살</div></td>
       </tr>
       <tr>
-        <td>학과</td>
-        <td>컴퓨터공학전공</td>
+        <td><button id="button3" onmouseover="buttonChangeColor('#f8cfe7', this)" onmouseout="buttonChangeColor('#9aabb7', this)" onclick="showContent('major')">전공</button></td>
+        <td><div id="content3" style="display: none;">컴퓨터공학전공</div></td>
       </tr>
       <tr>
-        <td>MBTI</td>
-        <td>ESTP</td>
+        <td><button id="button4" onmouseover="buttonChangeColor('#f8cfe7', this)" onmouseout="buttonChangeColor('#9aabb7', this)" onclick="showContent('mbti')">MBTI</button></td>
+        <td><div id="content4" style="display: none;">ESTP</div></td>
       </tr>
     </table>
     <div class="table-border"></div>
-    <strong><h1>좋아하는 것들</h1></strong>
+    <strong><h1>좋아하는 것들 (≧∀≦)ゞ</h1></strong>
     <div class="img-container">
-      <div class="img1">
-        <img src="./img/swim.png" width="150px">
+      <div class="img1" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
+        <img src="https://goeunii.github.io/goeun_page/swim.png" width="150px">
       </div>
-      <div class="img2">
-        <img src="./img/tour.png" width="150px">
+      <div class="img2" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
+        <img src="https://goeunii.github.io/goeun_page/tour.png" width="150px">
       </div>
-      <div class="img3">
-        <img src="./img/climbing.png" width="150px">
+      <div class="img3" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
+        <img src="https://goeunii.github.io/goeun_page/climbing.png" width="150px">
       </div><br>
       <ul type="disc">
         <li>수영</li>
@@ -45,8 +46,12 @@
       </ul>
     </div>
     <div class="table-border"></div>
-    <div id="bold">
-      나의 SNS >> <a href="https://www.instagram.com/rivgoni/?igsh=MXJodThtd2NpOGR2YQ%3D%3D">instagram 링크 !!</a></나의><br>
-    </div>  
+    <div class="text">
+      <div class="bold">
+        나의 SNS 👉 <a href="https://www.instagram.com/rivgoni/?igsh=MXJodThtd2NpOGR2YQ%3D%3D" onmouseover="changeColor('#d40883')" onmouseout="changeColor('black')">instagram 링크 !!</a>
+      </div>
+    </div>
+
+    <script src="page2.js"></script> 
   </body>
 </html>
