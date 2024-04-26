@@ -1,0 +1,113 @@
+*{
+    background-color: beige;
+}
+body {
+    margin: 15px;
+}
+header {
+    border-bottom: 3px solid rgb(177, 176, 160);
+    padding: 10px 20px 30px 30px;  
+    margin-bottom: 10px 10px 10px 0;
+}
+.PageName {
+    color: rgb(61, 203, 247);   
+    background-color: rgb(255, 218, 224);
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 2px 13px 4px 13px;
+    border: 3px solid rgb(255, 139, 139);
+    border-radius: 4%;
+    margin: 0 18px 0 0;
+}     
+.PageName:visited {  
+    color: rgb(61, 203, 247);   
+}
+.PageName:hover{color:rgb(2, 255, 167);}
+/* button (ON/OFF) */
+.ON_button{background-color: yellow;}
+.ON_button:hover{background-color: rgb(255, 183, 0);}
+.OFF_button{background-color: gray;}
+.OFF_button:hover{background-color: rgb(213, 118, 118);}
+/* menu */
+.menu {
+    border-right: 4px dotted rgb(177, 176, 160);
+    margin: 0 20px 0 20px;
+    padding: 20px 0;
+}
+.menu a {
+    color:rgb(104, 43, 28);
+    border: 1px solid rgb(140, 0, 255);
+    padding: 0 2px 0 2px;
+    background-color: rgb(248, 194, 77);
+    text-decoration:none;
+}
+.menu a:visited{color:rgb(104, 43, 28);}
+.menu a:hover{color:red;}
+/* grid1 */
+#grid1 {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+/* grid2 banner */
+.banner{
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-bottom: 3px solid rgb(177, 176, 160);
+}
+.banner a {text-decoration:none; color:black;}
+.banner a:hover{color:red;}
+/* banner - Home, SNS, Contacts */
+.item1,.item2,.item3 {
+    text-align: center;
+    border-right: 3px solid rgb(177, 176, 160);
+    flex-grow: 1;
+    padding-top:3px;
+}
+/* Banner - TMI */
+.item4 {
+    text-align: center;
+    flex-grow: 1;
+    padding-top:3px;
+}
+/* 850px 이하일 때 */
+@media(max-width: 1200px){
+    #grid1 {
+        display: none;
+    }
+}
+/* 850px 이상일 때*/
+/*@media(max-width:1200px,)*/
+@media(min-width: 1200px){
+    #grid2 {
+      display: none;
+    }
+}
+/*------------------------------------------------------------*/
+/* Contactme CSS!! */
+/* main */
+main {
+    margin-left: 30px;
+}
+/* intro */
+.intro {
+    color:rgb(255, 60, 0);
+    background-color: rgb(127, 246, 255);
+    display: inline;
+    padding: 3px;
+    margin:5px;
+    font-size: x-large;
+}
+.intro:hover {
+    color:rgb(157, 255, 0);
+    background-color: rgb(0, 136, 255) ;
+}
+/* contact list */
+.contact {
+    text-decoration: none;
+    color:black;
+}
+.contact:visited {color:black;}
+.contact:hover {color:rgb(255, 0, 191);}

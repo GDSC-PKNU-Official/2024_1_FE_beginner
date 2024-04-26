@@ -3,20 +3,86 @@
     <head>
         <title> Subin Homepage </title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="style1.css">
     </head>
     <body>
-        <h1 style="text-align: center;">
-            <a href="Homepage.html">Subin_Bae</a>
-        </h1>
-
-        <blockquote>
-            안녕하세요! 저는 <strong>배수빈</strong>입니다.<br><br>
-
-            <img src="image/IMG_4162.JPG" width="25%"><br><br>
-            <h3><a href="About_me.html">About me</a></h3>
-            <h3><a href="Favorite.html">Favorites</a></h3>
+        <div class="button">
+            <div class="light">
+                <input type="button" value="light" onclick="lightmode()">
+            </div>
+            <div class="dark">
+                <input type="button" value="dark" onclick="darkmode()">
+            </div>
             
-        </blockquote>
+        </div>
+        <div class="container">
+        <div class="profile">
+            <a href="Homepage.html" onclick="gohome()"><img src="image2/6.png" width="35px"></a>
+            <div class="name">
+                <a href="Homepage.html">Subin_Bae</a>
+            </div>
+            <div class="bold">
+                ···
+            </div>
+        </div>
+        
+        <div class="image1">
+            <img src="image/IMG_4882.JPG">
+        </div>
+        
+        <div class="icon">
+            <img id="img1" src="image2/1.png">
+            <img id="img3" src="image2/3.png">
+            <img id="img5" src="image2/5.png">
+
+            <span class="icon2">
+                <img id="img4" src="image2/4.png">
+            </span>
+        </div>
+
+        <span class="text">
+            <strong>Subin_Bae  </strong>
+            안녕하세요! 저는 배수빈입니다-!
+        </span><br><br>
+        
+
+        <div class="hashtag">
+            <a href="About_me.html">#About_me</a>
+            <span class="hashtag2">
+                <a href="Favorite.html">#Favorites</a>
+            </div>
+        </div>
+        </div>
+
+        <script>
+            function lightmode(){
+                document.querySelector('body').style.color = '#291C0E';
+                document.querySelector('body').style.backgroundColor = '#FAF8EC';
+                document.querySelector('.name a').style.color = '#291C0E';
+                document.querySelector('.hashtag a').style.color = '#3143AD';
+                document.querySelector('.hashtag2 a').style.color = '#3143AD';
+
+                document.getElementById('img1').src='image2/1.png';
+                document.getElementById('img3').src='image2/3.png';
+                document.getElementById('img5').src='image2/5.png';
+                document.getElementById('img4').src='image2/4.png';
+            }
+            function darkmode(){
+                document.querySelector('body').style.color = '#FAF8EC';
+                document.querySelector('body').style.backgroundColor = '#291C0E';
+                document.querySelector('.name a').style.color = '#FAF8EC';
+                document.querySelector('.hashtag a').style.color = '#6195B3';
+                document.querySelector('.hashtag2 a').style.color = '#6195B3';
+                
+                document.getElementById('img1').src='image2/1-1.png';
+                document.getElementById('img3').src='image2/3-1.png';
+                document.getElementById('img5').src='image2/5-1.png';
+                document.getElementById('img4').src='image2/4-1.png';
+            }
+            function gohome(){
+                alert("홈으로 이동합니다!");
+            }
+        </script>
 
     </body>
 </html>

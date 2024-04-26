@@ -1,22 +1,61 @@
 <!doctype html>
 <html>
-    <head>
-        <title>My Page</title>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <div align="center">
-            <h1><a href='myPage.html'>🏡 Joooii 🏡</a></h1>
-
-            <a href="introduction.html">🍼Click Me🍼</a><br>
-            <a href="like.html">👻Like👻</a><br>
-            <br>
-            <h2></h2>
-            <img src="images/마루.jpeg" width="300px"><br>
-            <p>안녕하세용</p>
-            <b>👇🏻👇🏻👇🏻 더 궁금하다면!! 👇🏻👇🏻👇🏻</b><br>
-            <a href="https://www.instagram.com/jooo_ii/">📱instagram📱</a><br>
-            <a href="https://github.com/joooii">💻github💻</a><br>
+<head>
+    <title>My Page</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style_main.css" />
+    <script src="https://kit.fontawesome.com/cb9eb66d40.js" crossorigin="anonymous"></script>
+    <script>
+        function mouseover(obj){
+            obj.src="images/마루2.jpeg";
+        }
+        function mouseout(obj){
+            obj.src="images/마루.jpeg";
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_logo">
+            <h1><a href='myPage.html'><i class="fa-brands fa-waze fa-2xl" style="color: #3f352c;"></i></a></h1>
         </div>
-    </body>
+
+        <div class="navbar_menu">
+            <li><a href="myPage.html">Home</a></li>
+            <li><a href="introduction.html">Introduct</a></li>
+            <li><a href="like.html">Interest</a></li>
+        </div>
+    </nav>
+
+    <div id="contents">
+        <p><b>Welcome to my Home!</b></p>
+        <img src="images/마루.jpeg" width="300px" height="300px" onmouseover="mouseover(this)" onmouseout="mouseout(this)"><br>
+    </div>
+
+    
+    <div id="footer">
+        <div class="SNS">
+            <a href="https://www.instagram.com/jooo_ii/"><img src="images/instagram.png"></a>
+            <a href="https://github.com/joooii"><img src="images/github.png"></a>
+        </div>
+        
+        <div class="mode">
+            <input type="image" src="images/moon.png" onclick="
+                var elements = document.querySelectorAll('i, h1, p, a, .SNS');
+                elements.forEach(function(element) {
+                    element.style.color = 'rgb(238, 232, 212)';
+                });
+                document.querySelector('body').style.backgroundColor = 'rgb(30,30,31)';
+            ">
+
+            <input type="image" src="images/sunny.png" onclick="
+                var elements = document.querySelectorAll('i, h1, p, a, .SNS');
+                elements.forEach(function(element) {
+                    element.style.color = 'black';
+                });
+                document.querySelector('body').style.backgroundColor = 'rgb(238, 232, 212)';
+            ">
+        </div>
+    </div>
+</body>
 </html>
