@@ -1,5 +1,5 @@
 body {
-  background-color: #b3e4fd;
+  background-color: #efdfe5;
   text-align: center;
 }
 
@@ -8,18 +8,16 @@ h1 {
   padding-bottom: 20px;
 }
 
-a {
-  color:rgb(212, 8, 131);
-}
-
 .table-border {
     border-bottom: 2px solid black;
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
 
-#bold {
-    font-weight: bold;
+.bold {
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .img-container {
@@ -29,6 +27,15 @@ a {
 .img-container > div {
   display: inline-block;
   margin-right: 10px;
+}
+
+.text {
+    display: inline-block;
+    background-color: #aec3d0;
+    border-radius: 50%;
+    margin-top: 10px;
+    padding: 25px;
+    border: 4px solid #526D82;
 }
 
 @media (max-width: 500px) {

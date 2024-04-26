@@ -1,6 +1,6 @@
 body {
     background-color: #FDFF85;
-    background-image: url('/imges/browser.png');
+    background-image: url('./images/browser.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;  
@@ -43,6 +43,11 @@ ol{
     border-color: #6E6E6E #6E6E6E;
     border-radius: 10px 10px 0 0;
     font-weight: 700;
+}
+p{
+    position: relative;
+    left: 185px;
+    margin: 10px;
 }
 
 .foods{

@@ -43,3 +43,41 @@ table th,td{
     border-bottom: 1px solid black;
     padding: 5px;
 }
+
+p{
+    font-size: 14px;
+    color: gray;
+}
+
+#footer{
+    position: fixed;
+    height: 70px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.SNS{
+    display: inline-block;
+    float: left;
+    margin-left:20px;
+    margin-top: 5px;
+}
+
+.SNS img{
+    height: 40px;
+    padding-right: 10px;
+}
+
+.mode{
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.mode input{
+    height: 35px;
+    padding-left: 5px;
+}

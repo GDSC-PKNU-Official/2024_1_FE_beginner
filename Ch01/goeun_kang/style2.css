@@ -4,8 +4,16 @@ h1 {
 }
 
 body {
-    background-color: #b3e4fd;
+    background-color: #efdfe5;
     text-align: center;
+}
+
+button {
+  border: 3px solid #27374D;
+  border-radius: 50%;
+  font-weight: bold;
+  background-color: #9aabb7;
+  padding: 10px;
 }
 
 table {
@@ -21,21 +29,39 @@ table {
 }
 
 th, td {
-    border: 2px solid black;
+    border: 3px solid #27374D;
+    background-color: #aec3d0;
     padding: 8px;
     text-align: left;
 }
 
 ul {
+  background-color: #aec3d0;
+  padding: 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 5px;
+  border-radius: 40%;
+  border: 4px solid #526D82;
   display: inline-block;
   text-align: center;
 }
 
-a {
-  color:rgb(212, 8, 131);
+li::marker {
+  content: '❤ ';
+  color: #f7c5e2;
 }
 
-#bold {
+.text {
+  display: inline-block;
+  background-color: #aec3d0;
+  border-radius: 50%;
+  margin: 10px;
+  padding: 15px;
+  border: 4px solid #526D82;
+}
+
+.bold {
   font-weight: bold;
 }
 

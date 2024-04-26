@@ -4,11 +4,20 @@
     <title>My Page</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style_intro.css" />
+    <script src="https://kit.fontawesome.com/cb9eb66d40.js" crossorigin="anonymous"></script>
+    <script>
+        function mouseover(obj){
+            obj.src="images/me.png";
+        }
+        function mouseout(obj){
+            obj.src="images/미모지.png";
+        }
+    </script>
 </head>
 <body>
     <nav class="navbar">
         <div class="navbar_logo">
-            <h1><a href='myPage.html'>Joooii</a></h1>
+            <h1><a href='myPage.html'><i class="fa-brands fa-waze fa-2xl" style="color: #3f352c;"></i></a></h1>
         </div>
 
         <div class="navbar_menu">
@@ -20,7 +29,8 @@
 
     <div id="intro">
         <h2>저는 <i>김주희</i> 입니다</h2>
-        <img src="images/미모지.png" width="250px" height="250px"><br>
+        <img src="images/미모지.png" width="250px" height="250px" onmouseover="mouseover(this)" onmouseout="mouseout(this)">
+        <p>👆🏻사진에 마우스를 올려보세요!</p>
     </div>        
     <div class="table">
         <table>
@@ -45,6 +55,35 @@
                 <td>시스템경영공학부 기술데이터공학전공</td>
             </tr>
         </table>
+    </div>
+
+    <div id="footer">
+        <div class="SNS">
+            <a href="https://www.instagram.com/jooo_ii/"><img src="images/instagram.png"></a>
+            <a href="https://github.com/joooii"><img src="images/github.png"></a>
+        </div>
+        
+        <div class="mode">
+            <input type="image" src="images/moon.png" onclick="
+                var elements = document.querySelectorAll('i, h2, p, a, table th, table td');
+                elements.forEach(function(element) {
+                    element.style.color = 'rgb(238, 232, 212)';
+                    element.style.borderTopColor = 'rgb(238, 232, 212)';
+                    element.style.borderBottomColor = 'rgb(238, 232, 212)';
+                });
+                document.querySelector('body').style.backgroundColor = 'rgb(30,30,31)';
+            ">
+
+            <input type="image" src="images/sunny.png" onclick="
+                var elements = document.querySelectorAll('i, h2, p, a, table th, table td');
+                elements.forEach(function(element) {
+                    element.style.color = 'black';
+                    element.style.borderTopColor = 'rgb(30,30,31)';
+                    element.style.borderBottomColor = 'rgb(30,30,31)';
+                });
+                document.querySelector('body').style.backgroundColor = 'rgb(238, 232, 212)';
+            ">
+        </div>
     </div>
 </body>
 </html>

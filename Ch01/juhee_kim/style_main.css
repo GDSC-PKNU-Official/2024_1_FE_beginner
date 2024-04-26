@@ -8,6 +8,8 @@
 body{
     margin:0;
     background-color: rgb(238, 232, 212);
+    height: 100vh;
+    width: 100%;
 }
 
 .navbar_menu{
@@ -32,32 +34,53 @@ a:hover{
 
 #contents{
     display: flex;
-    position: static;
+    position: absolute;
+    left:50%;
+    top:40%;
+    transform: translate(-50%,-50%);
     align-items: center;
-    margin-left: 35%;
-    margin-top: 8%;
 }
+
 #contents img{
     height: 300px;
 }
 
 #contents p{
-    margin-right: 300px;
+    margin-right: 150px;
     font-size: 30px;
 }
 
-.SNS{
+#footer{
     position: fixed;
-    top:50%;
-    right: 40%;
-
-    padding-top: 20%;
+    height: 70px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     text-align: center;
-    font-size: 23px;
+}
+
+.SNS{
+    display: inline-block;
+    float: left;
+    margin-left:20px;
+    margin-top: 5px;
 }
 
 .SNS img{
-    height: 21px;
+    height: 40px;
+    padding-right: 10px;
+}
+
+.mode{
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.mode input{
+    height: 35px;
+    padding-left: 5px;
 }
 
 @media(max-width:1000px){

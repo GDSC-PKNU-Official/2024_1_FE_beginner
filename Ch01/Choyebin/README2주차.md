@@ -65,7 +65,7 @@ content의 크기를 수정하고 싶다면 폭은 width: ~, 높이는 height:~ 
 *웹페이지에서 마우스 오른쪽 클릭 후 검사를 누르면 이를 확인 가능
 
 * 디자인이라는 목적을 위한, 어떠한 의미를 가지고 있지 않은 태그 -> 그렇기 때문에 묶을 때 사용하는 것이 좋음
-<div></dive> -> block level element임
+<div></div> -> block level element임
 <span></span> -> inline level element임
 
 그리드로 만들고 싶다면 그리드로 만들고 싶은 것끼리 묶고, style로 가서 dispaly: grid; grid-template-clumns(칼럼말고도 여러 개 있음 원하는 것 사용): 150px 1fr;

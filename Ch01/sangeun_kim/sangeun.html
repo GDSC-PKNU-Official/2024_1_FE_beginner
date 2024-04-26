@@ -4,6 +4,12 @@
         <meta charset="UTF-8">
         <title>Introduce</title>
         <style>
+
+            .btn {
+                position: relative;
+                bottom: 10px;
+                left: 30px;
+            }
             h3 {
                 border-radius: 20px 20px 0px 0px;
                 background-color: linen;
@@ -38,6 +44,13 @@
                     padding-bottom: 20px;
                     font-size: 13px;
                 }
+
+                .btn {
+                position: relative;
+                top: 10px;
+                bottom: 10px;
+                left: 30px;
+                }
                 img {
                     border-right: none;
                 }
@@ -51,10 +64,28 @@
         </style>
     </head>
     <body>
+        <div id="color">
+            <input type="button" value="night" onclick="
+            document.querySelector('body').style.backgroundColor = 'black';
+            document.querySelector('body').style.color = 'white';
+            document.querySelector('h3').style.backgroundColor = 'black';
+            document.querySelector('h3').style.color = 'white';
+            document.querySelector('#grid').style.backgroundColor = 'black';
+            ">
+            <input type="button" value="day" onclick="
+            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector('body').style.color = 'black';
+            document.querySelector('h3').style.backgroundColor = 'linen';
+            document.querySelector('h3').style.color = 'blueviolet';
+            document.querySelector('#grid').style.backgroundColor = 'linen';
+            ">
+        </div>
         <strong><h3>"김상은"을 소개합니다.</h3></strong>
         <div id="grid">
-        <img src="media/sangeun.png" width=350 height=400
+        <div id="img">    
+        <img id="img" src="media/sangeun.png" width=350 height=400
             alt="sangeun">
+        </div>
             <div id="article">
             <p>
             안녕하세요! 저는 부경대학교 컴퓨터인공지능공학부 2학년 김상은입니다.<br>
@@ -63,6 +94,15 @@
             SNS : <a href="https://www.instagram.com/s_eun1118/" target="_blank">Instagram</a>
             </p>
             저에 대해서 더 궁금하다면 ? <a href="seun2.html" target="_self">Click!</a> 
+            </div>
+                <div id="btn">
+                <input type="button" class="btn" value="hide img" onclick="
+                    document.querySelector('img').style.display='none';
+                    ">
+                <input type="button" class="btn" value="view img" onclick="
+                    document.querySelector('img').style.display='';
+                    ">  
+                </div>
             </div>
         </div>
     </body>
