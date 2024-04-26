@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김리아를 소개합니다</title>
+    <link rel="stylesheet" href="introduce_style.css">
+    <link rel="stylesheet" href="https://webfontworld.github.io/NanumSquare/NanumSquare.css">
+</head>
+<body>
+    <div class="first">
+
+        
+            <h1>   😊안녕하세요😊 <br> 저는 김리아입니다 </h1>
+
+            <form class="username">
+                당신의 이름이 궁금해요! :  <input class="inputname" id="username" type='text'/><br>
+                <input type='submit' value='제출' id="submit" class="inputname">
+            </form>
+            
+
+
+    <div class="second">
+        <div class="cloud">
+             <ol class="lists">
+                 <li id="list"><a href="me1.html">저를 소개합니다</a></li><br>
+                 <li id="list"><a href="me2.html">제가 좋아하는 것들이에요</a></li><br>
+                 <li id="list"><a href="me3.html">열심히 하겠습니다!!</a></li><br>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("submit").addEventListener("click", function() {
+            var usernameInput = document.getElementById("username"); 
+            var name = usernameInput.value;
+            alert(name+'님 안녕하세요!!');
+        });
+    </script>
+
+</body>
+</html>

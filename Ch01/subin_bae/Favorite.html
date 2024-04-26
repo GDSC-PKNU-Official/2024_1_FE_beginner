@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Subin Homepage </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style3.css">
+
+    </head>
+    <body>
+        <div class="container">
+        <div class="profile">
+            <a href="Homepage.html" onclick="gohome()"><img src="image2/6.png"></a>
+            <h3>#Favorites
+            <div>이미지에 마우스를 가져다 대보세요.</div>
+            </h3>
+            
+        </div>
+        
+        <div id="grid">
+            <span class="favorites">
+                <div class="group">
+                    <img src="image/dora.jpg">
+                    <div id="dora">
+                        도라에몽 캐릭터를 좋아해요
+                    </div>
+                </div>
+                <div class="group">
+                    <img src="image/pork.jpg">
+                    <div id="pork">
+                        삼겹살♡
+                    </div>
+                </div>
+                <div class="group">
+                    <img src="image/bread.jpg">
+                    <div id="bread">
+                        단골 빵집에서 매일 소금빵을 먹어요ㅎㅎ
+                    </div>
+                </div>
+                <div class="group">
+                    <img src="image/cooking.jpg">
+                    <div id="cooking">
+                        종종 만들어 먹는 샤브샤브
+                    </div>
+                </div>
+                <div class="group">
+                    <img src="image/river.jpg">
+                    <div id="river">
+                        운동을 두루 좋아하는 편이에요^_^
+                    </div>
+                </div>
+                <div class="group">
+                    <img src="image/forky.jpg">
+                    <div id="forky">
+                        만들기를 좋아해요! 포키 귀엽죠?!
+                    </div>
+                </div>
+                
+            </span>
+
+        </div>
+
+        </div>
+
+        <script>
+            var groups = document.querySelectorAll('.favorites .group')
+
+            groups.forEach(function(group){
+
+                var image = group.querySelector('img');
+                var text = group.querySelector('div');
+
+                image.addEventListener('mouseover', function(){
+                    text.style.display = 'block';
+                });
+                image.addEventListener('mouseout', function(){
+                    text.style.display = 'none';
+                });
+            });
+
+            function gohome(){
+                alert("홈으로 이동합니다!");
+            }
+            
+        </script>
+        
+    </body>
+</html>

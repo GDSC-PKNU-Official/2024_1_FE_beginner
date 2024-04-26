@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hwang Yoojin</title>
+    <link rel="stylesheet" href="css/tmi.css">
+</head>
+<body>
+  <!--header--------------------------------------------------------------------------------------->
+    <header>
+      <a class="PageName" href="index.html" title="[Home] Hwang Yoojin">Yoojin.H</a>
+      <!-- header color button (ON/OFF) -->
+      <button onclick="ON()" class="ON_button">ON</button>
+      <button onclick="OFF()"class="OFF_button">OFF</button>
+    </header>
+<!-- grid1 : when width is longer than 1200px --------------------------------------------------->
+  <div id="grid1">
+    <!-- side bar -->
+    <aside class="menu"><br>
+      <a href="index.html"     title="Home">Home</a><br><br>
+      <a href="lab.html"   title="LAB">LAB</a><br><br>
+      <a href="contactme.html" title="Contact">Contact Me</a><br><br>
+      <b><a href="tmi.html"    title="TMI" style="
+        color:rgb(18, 209, 91); 
+        background-color: rgb(200, 255, 0);
+        border:2px solid rgb(255, 0, 221);">
+        TMI</a></b>
+    </aside>
+    <!-- main -->
+    <main>
+      <br><h3 class="intro">
+        These are my FAVORITE songs and Photos!!
+      </h3>
+      <!-- Favorite song table -->
+      <table class="table_song">
+        <tr>
+          <td>Mac Miller</td>
+          <td><a href="https://youtu.be/6bMmhKz6KXg?si=C5f4zuQEFOvHvlb1" 
+            target="_blank" title="Knock Knock">
+            Knock Knock</a></td>
+        </tr>
+        <tr>
+          <td>Beenzino</td>
+          <td><a href="https://youtu.be/ojQoCfTRTkw?si=KQQFzZqkrPKk_KKT" 
+            target="_blank" title="Sandman">
+            Sandman</a></td>
+        </tr>
+        <tr>
+          <td>Youra</td>
+          <td><a href="https://youtu.be/bTA4Kvo2Rew?si=240P0FvmwHjzx8OO" 
+            target="_blank" title="구운듯한 얼굴이 너의 모티프">
+            구운듯한 얼굴이 너의 모티프</a></td>
+        </tr>
+      </table>
+      <!-- TMI Photos -->
+      <p class="IE">
+        This is me in my Favorite Beanie ^_^<br><br><br></p>
+        <img class="img_myBeanie" src="img/myBeanie.PNG">
+        <img class="img_myDiary" src="img/myDiary.PNG">
+        <img class="img_Pocoyo" src="img/Pocoyo.PNG"><br><br>
+      <p class="IE">
+        and That character is Pocoyo!! Cute little boy....<br>
+        He is one of my Favorite character ^&^<br>
+        +<br>
+        That black note is my Diary! 
+      </p>
+      <!-- TOO MUCH INFORMATION -->
+      <p class="realTMI">
+        (Wednesday, Apr 10)<br><br>
+        안녕하세요 사망년 황유진입니다.<br>
+        저는 오늘 저녁에 초밥과 족발.. 그리고 순대를 먹었어요~!~!<br>
+        아주 괴상한 조합이죠?<br>
+        그치만 맛있었어요<br>
+        CSS는 꽤나 재미가 있네요...<br>
+        사소한 게 마음에 안들어서 계속 고치고 고치고 고치는 중이에요....<br>
+        근데 완벽하진 않다는 게 포인트입니다 ^_^
+        <br><br>
+        <b class="Q1">오늘의 궁금증 : 순대를 간장에 찍어 먹으면 무슨 맛이 날까?</b><br><br>
+        다들 궁금해지셨죠?<br>
+        다음에 순대 먹을 때 간장에 찍어 드셔 보세요
+      </p>
+    </main>
+  </div>
+<!-- grid2 : when width is shorter than 1200px ------------------------------------------------->
+  <div id="grid2">
+    <!--banner-->
+    <div class="banner">  
+      <div class="item1"><a href="index.html" title="Home">Home</a></div>
+      <div class="item2"><a href="lab.html" title="LAB">LAB</a></div>
+      <div class="item3"><a href="contactme.html" title="">Contact Me</a></div>
+      <div class="item4"><a href="tmi.html" title="TMI" style="
+      color:rgb(18, 209, 91);"><b>TMI</b></a></div>
+    </div>
+    <!-- main -->
+    <main>
+      <br><br>
+      <h3 class="intro">
+        These are my FAVORITE songs and Photos!!
+      </h3>
+      <!-- Favorite song table -->
+      <table class="table_song">
+        <tr>
+          <td>Mac Miller</td>
+          <td><a href="https://youtu.be/6bMmhKz6KXg?si=C5f4zuQEFOvHvlb1" 
+            target="_blank" title="Knock Knock">
+            Knock Knock</a></td>
+        </tr>
+        <tr>
+          <td>Beenzino</td>
+          <td><a href="https://youtu.be/ojQoCfTRTkw?si=KQQFzZqkrPKk_KKT" 
+            target="_blank" title="Sandman">
+            Sandman</a></td>
+        </tr>
+        <tr>
+          <td>Youra</td>
+          <td><a href="https://youtu.be/bTA4Kvo2Rew?si=240P0FvmwHjzx8OO" 
+            target="_blank" title="구운듯한 얼굴이 너의 모티프">
+            구운듯한 얼굴이 너의 모티프</a></td>
+        </tr>
+      </table>
+      <!-- TMI Photos -->
+      <p class="IE">This is me in my Favorite Beanie ^_^<br></p>
+      <div class="img">
+        <div calss="img1"><img class="img_Pocoyo" src="img/Pocoyo.PNG"></div><br><br>
+        <div class="img2"><img class="img_myBeanie" src="img/myBeanie.PNG"></div>
+        <div class="img3"><img class="img_myDiary" src="img/myDiary.PNG"></div>
+      </div>
+      <p class="IE">
+        and That character is Pocoyo!! Cute little boy....<br>
+        He is one of my Favorite character ^&^<br>
+        +<br>
+        That black note is my Diary! 
+      </p>
+      <!-- TOO MUCH INFORMATION -->
+      <p class="realTMI">
+        (Wednesday, Apr 10)<br><br>
+        안녕하세요 사망년 황유진입니다.<br>
+        저는 오늘 저녁에 초밥과 족발.. 그리고 순대를 먹었어요~!~!<br>
+        아주 괴상한 조합이죠?<br>
+        그치만 맛있었어요<br>
+        CSS는 꽤나 재미가 있네요...<br>
+        사소한 게 마음에 안들어서 계속 고치고 고치고 고치는 중이에요....<br>
+        근데 완벽하진 않다는 게 포인트입니다 ^_^
+        <br><br>
+        <b class="Q1">오늘의 궁금증 : 순대를 간장에 찍어 먹으면 무슨 맛이 날까?</b><br><br>
+        다들 궁금해지셨죠?<br>
+        다음에 순대 먹을 때 간장에 찍어 드셔 보세요
+      </p>
+    </main>
+  </div>
+<!-- script ------------------------------------------------------------------------------------>
+  <script src="js/tmi.js"></script>
+</body>
+</html>

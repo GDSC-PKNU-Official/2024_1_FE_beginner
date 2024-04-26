@@ -1,23 +1,79 @@
 <!doctype html>
 <html>
-    <head>
-        <title>My Page</title>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <div align="center">
-            <h1><a href='myPage.html'>🏡 Joooii 🏡</a></h1>
-
-            <a href="introduction.html">🍼Click Me🍼</a><br>
-            <a href="like.html">👻Like👻</a><br>
-
-            <h2>제가 좋아하는 것은</h2>
-            
-            <p>
-                음식: 돈까스<br>
-                취미: 넷플릭스📽️<br>
-                <img src="images/돈까스.png" width="300px">
-            </p>
+<head>
+    <title>My Page</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style_like.css" />
+    <script src="https://kit.fontawesome.com/cb9eb66d40.js" crossorigin="anonymous"></script>
+    <script>
+        function mouseover1(obj){
+            obj.src="images/캥거루.jpeg";
+        }
+        function mouseout1(obj){
+            obj.src="images/호주.jpeg";
+        }
+        function mouseover2(obj){
+            obj.src="images/싱가폴2.jpeg";
+        }
+        function mouseout2(obj){
+            obj.src="images/싱가폴.jpeg";
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_logo">
+            <h1><a href='myPage.html'><i class="fa-brands fa-waze fa-2xl" style="color: #3f352c;"></i></a></h1>
         </div>
-    </body>
+
+        <div class="navbar_menu">
+            <li><a href="myPage.html">Home</a></li>
+            <li><a href="introduction.html">Introduct</a></li>
+            <li><a href="like.html">Interest</a></li>
+        </div>
+    </nav>
+    
+    <div id="interest">
+        <h2>제가 좋아하는 것은</h2>
+            
+        <p class="food">음식: 돈까스</p>
+        <p class="inter">취미: 넷플릭스</p>
+        <p class="bucket">버킷리스트: 해외여행</p>
+        <p class="travel">가고싶은 나라 (사진에 마우스를 올려보세요!)</p>
+
+
+        <div class="travel1">
+            <img src="images/호주.jpeg" onmouseover="mouseover1(this)" onmouseout="mouseout1(this)"><p>호주</p>
+        </div>
+        <div class="travel2">
+            <img src="images/싱가폴.jpeg" onmouseover="mouseover2(this)" onmouseout="mouseout2(this)"><p>싱가폴</p>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="SNS">
+            <a href="https://www.instagram.com/jooo_ii/"><img src="images/instagram.png"></a>
+            <a href="https://github.com/joooii"><img src="images/github.png"></a>
+        </div>
+        
+
+        <div class="mode">
+            <input type="image" src="images/moon.png" onclick="
+                var elements = document.querySelectorAll('i, h2, p, a, table th, table td');
+                elements.forEach(function(element) {
+                    element.style.color = 'rgb(238, 232, 212)';
+                });
+                document.querySelector('body').style.backgroundColor = 'rgb(30,30,31)';
+            ">
+
+            <input type="image" src="images/sunny.png" onclick="
+                var elements = document.querySelectorAll('i, h2, p, a');
+                elements.forEach(function(element) {
+                    element.style.color = 'black';
+                });
+                document.querySelector('body').style.backgroundColor = 'rgb(238, 232, 212)';
+            ">
+        </div>
+    </div>
+</body>
 </html>

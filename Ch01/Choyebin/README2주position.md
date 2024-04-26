@@ -1,3 +1,4 @@
+
 <position 속성>
 position 속성 -> HTML 문서 상에서 요소가 배치되는 방식 결정
 정확한 위치 지정을 위해 top,left,bottom,right 속성과 함께 사용

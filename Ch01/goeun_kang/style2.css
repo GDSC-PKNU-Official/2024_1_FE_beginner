@@ -1,0 +1,56 @@
+h1 {
+  border-bottom: 2px solid black;
+  padding-bottom: 20px;
+}
+
+body {
+    background-color: #b3e4fd;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    display: inline;
+}
+
+.table-border {
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+ul {
+  display: inline-block;
+  text-align: center;
+}
+
+a {
+  color:rgb(212, 8, 131);
+}
+
+#bold {
+  font-weight: bold;
+}
+
+.img-container {
+  text-align: center;
+}
+
+.img-container > div {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+@media (max-width: 500px) {
+  .img-container > div {
+    display: block;
+    margin: 10px auto;
+  }
+}

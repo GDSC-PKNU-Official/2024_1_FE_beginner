@@ -1,0 +1,61 @@
+body{
+    background-color: #FDFF85;
+    height: 100vh;
+}
+
+
+h1{
+    margin-top: 5%;
+    display:flex;
+    justify-content: center;
+    color: #6E6E6E;
+    font-family : 'NanumSquare', sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.username{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #6E6E6E;
+    font-family : 'NanumSquare', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+input, button{
+    height: 25px;
+}
+
+p{
+    margin: 0;
+}
+
+.cloud{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    background-image: url("./images/cloud.png");
+    background-size: 80% 130%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+
+.lists{
+    position: relative;
+    margin: 20%;
+    background-color: rgba(0,0,0,0);
+    z-index: 0;
+}
+
+a{
+    background-color: rgba(0,0,0,0);
+    z-index: 1;
+    font-family : 'NanumSquare', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
