@@ -24,6 +24,8 @@
                 font-size: 20px;
                 padding-top: 15px;
                 text-align: center;
+                margin-top: 0;
+                margin-bottom: 10;
             }
             .list{
                 display: block;
@@ -34,7 +36,16 @@
                 text-decoration: none;
                 color:black;
             }
+            #butt{
+                text-align: center;
+            }
         </style>
+        <script>
+            function change(){
+                var chii = document.getElementById("image")
+                chii.src="pajama.jpeg"
+            }
+        </script>
     </head>
     <body>
         <br>
@@ -44,16 +55,15 @@
         <a href="https://www.youtube.com/watch?v=dIt_N7yNTgk" target="_blank">
             <img id="image" title="눌러보세요!" src="chiikawa.jpg" width="650">
         </a>
+        <div id="butt">
+            <input type="button" value="버튼을 눌러보세요!" onclick="change();
+            alert('사진 변경 중이에요!🤓');">
+        </div>
         <h3> 원하시는 것을 누르면 이동합니다!!</h3>
         <div class="list">
             <li><a href = "01.html" target ="_blank">조예빈</a></li>
             <li><a href = "02.html" target ="_blank">TMI</a></li>
             <li><a href = "03.html" target ="_blank">?</a></li>
         </div>
-        
-        <p>
-
-        </p>
-
     </body>
 </html>
