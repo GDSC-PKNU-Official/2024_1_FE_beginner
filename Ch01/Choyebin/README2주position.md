@@ -16,7 +16,7 @@ position: absolute
 position: fixed
 -> 화면을 위아래로 스크롤하더라도 브라우저 화면의 특정 부분에 고정되어 움직이지 않도록 만든다.
 이의 배치 기준은 자신이나 부모 요소가 아닌 브라우저 전체화면.
-top, left, bottom, right 속성은 브라우저의 상단,좌측,하단,우측으로 부터 해당 요소가 얼마나 
+top, left, bottom, right 속성은 브라우저의 상단,좌측,하단,우측으로 부터 해당 요소가 얼마나
 떨어져 있는지 결정
 
 position: sticky
